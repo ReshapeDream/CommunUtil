@@ -1,5 +1,7 @@
 package itart.me.communutil;
 
+import android.support.annotation.Nullable;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -45,6 +47,7 @@ public class CommunUtil {
      * @return
      * @throws NoSuchMethodException
      */
+    @Nullable
     public <M>M invoke(String methodName) throws NoSuchMethodException {
         if(methodClassMap ==null){
             throw new NoSuchMethodException("methodClassMap null,pls add method first");
@@ -82,6 +85,7 @@ public class CommunUtil {
         variableMap.put(variableName,variable);
     }
 
+    @Nullable
     public <T> T getVariable(String variableName){
         if(variableMap==null){
             return null;
