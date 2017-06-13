@@ -47,5 +47,5 @@ System.out.println("variable:variableName="+t);
 ```java
 T t=CommunUtil.getInstances().invoke(methodName);
 ```
-ps:T is generics type.(T 是泛型)
+ps:T is generics type.(T 是泛型)</br>
    多线程存取要注意存取顺序！
