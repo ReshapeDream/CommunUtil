@@ -1,4 +1,5 @@
 
+欢迎star和探讨
 # CommunUtil
   Used for communication between activity,fragment etc.</br>
   用于activity,fragment等通讯</br>
