@@ -2,7 +2,9 @@
 欢迎star和探讨
 # CommunUtil
   Used for communication between activity,fragment etc.</br>
-  用于activity,fragment等通讯</br>
+  用于activity,fragment等之间通讯</br>
+  不仅可以传递变量，还可以传递方法，随时随地的创建一个方法，而在另一个地方调用！</br>
+  且不限于activity和fragment</br>
 ## GetStart
 add to your project</br>
 添加到你的工程</br>
