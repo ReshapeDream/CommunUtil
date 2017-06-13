@@ -1,3 +1,4 @@
+
 # CommunUtil
   Used for communication between activity,fragment etc.</br>
   用于activity,fragment等通讯</br>
@@ -47,3 +48,4 @@ System.out.println("variable:variableName="+t);
 T t=CommunUtil.getInstances().invoke(methodName);
 ```
 ps:T is generics type.(T 是泛型)
+   多线程存取要注意存取顺序！
