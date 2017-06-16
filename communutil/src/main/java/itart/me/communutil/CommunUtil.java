@@ -52,14 +52,12 @@ public class CommunUtil {
         if(methodClassMap ==null){
             throw new NoSuchMethodException("methodClassMap null,pls add method first");
         }
-        Iterator<Map.Entry<String, MethodClass>> iterator = methodClassMap.entrySet().iterator();
-        while (iterator.hasNext()){
-            Map.Entry<String, MethodClass> next = iterator.next();
-            if(methodName.equals(next.getKey())){
-               return (M) next.getValue().run(next.getValue().paramMap);
-            }
+        MethodClass methodClass = methodClassMap.get(methodName);
+        if(methodClass==null){
+            throw new NoSuchMethodException("no such method");
+        }else{
+            return (M) methodClass.run(methodClass.paramMap);
         }
-        throw new NoSuchMethodException("no such method");
     }
 
     /**
