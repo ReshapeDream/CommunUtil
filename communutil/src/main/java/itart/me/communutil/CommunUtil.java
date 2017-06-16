@@ -9,12 +9,12 @@ import java.util.Map;
 /**
  * @author nzbao
  * @CreateTime 2017/6/13
- * @Desc
+ * @Desc 用于模块间通讯
  */
 public class CommunUtil {
     Map<String,MethodClass> methodClassMap;//方法对象 map
     Map<String,Object> variableMap;//变量map
-    private static CommunUtil instance=null;
+    private static volatile CommunUtil instance=null;
 
     public static CommunUtil getInstances(){
         if(instance==null){
